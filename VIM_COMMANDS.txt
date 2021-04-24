@@ -1,0 +1,143 @@
+In, Vim we have normal mode, insert mode and visual mode.
+Initially, when we open Vim, we have normal mode which is used to delete (edit) and traverse through the document (but not write).
+
+In the Windows OS, we have Windows Subsystem for linux (Ubuntu Distros), where we can access the Vim text editor.
+
+To access Vim, we can type 'vim' on the terminal emulator.
+This opens the Vim editor, to start editing (inserting) we can type 'i' to go into the insert mode and start editing the document.
+
+Since this creates a new file we have to name the file first before saving we can type':w nameofthefile.txt' to name 
+the file. Then to save the file we can use ':wq' this saves and exits the Vim editor.
+
+We use 'vim (filename)' to open vim with the given filename. If the file exists in the given directory it will open 
+that file else new file will be created and we have to give the filename.
+
+
+Commands in normal mode:
+
+1. :q - to exit the vim editor directly
+
+2. :wq - to save and exit the editor
+
+3. :q! - to exit without saving 
+
+4. esc - to come out of any mode
+
+5. :w (filename) - to give the filename
+
+6. For traversing we use h --> left, j --> down, k --> up, l --> right (character by character).
+
+7. ndd - to delete n line(s) (it also cuts the line)
+
+8. ndw - to delete n word(s)
+
+9. nx - to delete n character(s) 
+
+10. nu - n undo(s)
+
+11. :set number - to have line numbers towards left
+
+12. :(line number) - to go to the provided line(number) 
+
+13. gg - top of the document
+
+14. shift + g - end of the document
+
+15. nw - to traverse 'n' word by word (best for fast traversing)
+
+16. nb - to traverse 'n' word(s) backwards
+
+17. p - to paste the line (which is copied, cutted, deleted (using dd))
+
+18. nce - to delete word(s) and go into the insert mode directly and type out the new word. We can also type 'c$' to 
+delete the entire line and go to the insert mode and type out the new line. 
+
+19. yy - to copy(yank) the line and 'y$' to copy from cursor to the end of the line
+
+20. dd - to cut the line 
+
+21. v - to go into visual mode where we can select the text using up-down arrow keys and then press d/y to cut/copy, 
+then it will go into normal mode where we can paste it using 'p' key.
+
+22. / (word(s)) + enter - here 'word' is the word theat we want to search in then normal mode. To go to the next 
+searched word press n and for going to the previous searched word press N.
+
+23. r(letter) - to replace the letter withe the given letter in normal mode. Such as 'ri', here we'll replace the letterwhere the cursor is at with the letter specified after r.
+
+24. :split (filename) - this splits the screen horizontally and opens a new file specified in the filename if it exists
+in the same directory. If we want to split vertically we can use vsplit instead of split. We use 'ctrl + ww' to switch between both the files. 
+
+25. ctrl + r - redo
+
+26. 0 - to go the beginning of the line
+
+27. f(character) - to go to theat specified character in the line
+
+28. F(character) - to go to theat specified character in the line (backwards).
+
+29. A - it takes the cursor to the end of the line and automatically goes into insert mode to complete the line.
+
+30. s - wherever the cursor is at it deletes theat character and goes into insert mode to edit.
+
+31. S - deletes the whole line and enters into insert mode.
+
+32. o - creates a new line below the line (where the cursor is at) and goes into insert mode.
+
+33. O - creates a new line at the top of the line(where the cursor is at) and goes into insert mode.
+
+34. d$ - deletes from the cursor to the end of the line
+
+35. % - to go to the parenthesis symbol directly in a line
+
+36. :%s/oldword/newword/g - this is used for replacing the oldword with the newword in the whole document
+
+37. :%s/oldword/newword/gc - this is used for replacing the oldword with the newword in the whole document(with prompts)
+
+38. :!(command) - to type system commands in vim without closing it
+
+39. ctrl + d - to check if the command in the command (normal) mode is a valid one and what are the other similar commands starting from it.
+
+40. vim (filename) (filename) - this command is used to open two files directly together in the vim editor if they both exists in the same 
+directory. To go to the next file we use ':n' and for going into the previous one we use ':prev'.
+
+41. vim (pathname) (pathname) - this command is used to open files which are present respectively in their paths and for switching between the files
+we use same as above ie. /mnt/c/sikan/..... and /mnt/d/Web Development/..... 
+
+42. :recover - to recover the accidentally deleted file
+
+43. vim -r (filename) - this is also used to recover the unsaved/deleted file
+
+44. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+Commands:
+
+1. cd (foldername)\(foldername) - for changing directory (going inside a particular 
+folder), if the foldername contains space enclose it with ""
+
+2. cd ..\.. - for going backwards (exiting) from the current directory (folder)
+
+3. pwd - print current working directory
+
+4. ls - listing all the contents at once of the current directory (folder)
+
+5. tab - for autocompleting commands (it gives all the possible options to consider)
+
+6. dir - for also listing the contents of the current directory in details (gives the 
+total directories and files)
+
+7. dir (remaining pathname to that directory from the current directory) - same as 
+above, the difference is that it doesn't changes the path of the current directory
+
+8. dir /a - same as dir plus for displaying all the system's hidden files, here /a is the option
+
+9. cls - for clearing the screen
+
+10. dir *.(file extension) - same as dir but this will list only all the files that 
+have the given file extension
+
+11. uparrow/downarrow - for navigating history of commands
+
+12. (filename) - this will open the file for the specified filename using the default
+application (make sure to surround the filename having spaces with double quotes)
+
+13. (commandname) /? - this will give the in brief about the command name specified
+(list of options, description, etc) also known as the help command
+
+14. mkdir (directoryname)- for creating a directory (folder)
+
+15. rmdir (directoryname) - for deleting the directory (folder)
+
+16. rmdir /s (directoryname) - for deleting all the contents of the directory (folder), here /s is the option
+
+17. (holding) ctrl + leftarrow/rightarrow - for traversing word by word
+
+18. ctrl + c - for force stopping the program/application
+
+19. Absolute path is the exact path of the file or the folder (entire directory), 
+we can do cd (absolutepath) and our current directory will change to the absolute path.
+
+20. path - gives the list of all directories windows has to search for from the root directory to open the 
+given (specified) application.
+
+21. path %path%;(pathname) - we can use this to set new path temporarily (in the path variable), after this we can open any application present in the new added path from the root directory  
+
+23. (drivename) - to go to that particular drive
+
+24. In the C drive, programfiles folder has all 64-bit applications and programfiles(x86) has all the 32-bit applications
+
+25. tree - this command shows hierarchical relationships between folders of the current directory 
+
+26. echo > (filename) - to create a new file in the current directory
+
+27. rm (filename) - to remove the specified file in the current directory
+
+28. attrib - this command displays the file attributes
+
+29. attrib +/-(attribute name (letter)) (filename) - this is used to set the file attribute to hidden, read-only, etc. + for setting the attribute
+- for clearing the attribute 
+
+30. del (filename) (filename) - to delete a file(s)
+
+31. type (filename) - to read the contents of the file from the command prompt
+
+32. copy (filename) (pathname to the folder/foldername) - it copies the file to the specified destination, provided the file is accessible from the current directory and also the folder else we should give the path to the folder to copy the file (primarily for copying files to folders)
+
+33. xcopy (firstfoldername) (secondfoldername) /s - it copies the firstfoldername (all files,sub-folders,etc) to the secondfoldername provided both
+the folders are accesible from the current directory else give the path to the folder (primarily for copying folders to folders)
+
+34. move (firstfoldername) (secondfoldername) - for moving the firstfoldername to the secondfoldername provided both are accessible from the currentdirectory
+
+35. rename (foldername) (newfoldername) - it renames the foldername to the new foldername
+
+36. 
+
